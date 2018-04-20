@@ -1,7 +1,15 @@
 .content
   .jobad
     - @jobads.each do |jobad|
-      .jobad_name
-        = jobad.name
-      .jobad_introduction
-        = jobad.introduction
+      %table
+        %tbody
+          %tr
+            %th 求人
+            %td
+              .jobad_name
+                = jobad.name
+          %tr
+            %th 求人情報
+            %td
+              .jobad_introduction
+                = jobad.introduction
