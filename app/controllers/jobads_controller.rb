@@ -4,18 +4,32 @@ class JobadsController < ApplicationController
   end
 
   def new
+    @jobad = JobAd.new
   end
 
   def create
+    jobad = JobAd.new(jobad_params)
+    # binding.pry
+    jobad.save
+  end
+
+  def show
+    @jobad = JobAd.find(params[:id])
   end
 
   def edit
   end
 
-  def upload
+  def update
   end
 
   def destroy
   end
 
+
+private
+
+  def jobad_params
+    params.require(:job_ad).permit(:name, :introduction)
+  end
 end

@@ -1,0 +1,17 @@
+.show__page
+  %table
+    %tbody
+      %tr
+        %th
+          .jobad__name__section 求人
+        %td
+          .jobad__name
+            = @jobad.name
+      %tr
+        %th
+          .jobad__introduction__section 求人情報
+        %td
+          .jobad_introduction
+            = @jobad.introduction
+  .link__to__home
+    = link_to "homeへ戻る", "/jobads"
