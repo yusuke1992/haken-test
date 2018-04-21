@@ -1,4 +1,6 @@
 .container
+  .link
+    = link_to '求人作成', "/jobads/new"
   .jobad
     - @jobads.each do |jobad|
       %table
@@ -8,7 +10,7 @@
               .jobad__name__section 求人
             %td
               .jobad__name
-                = jobad.name
+                = link_to "#{jobad.name}", "/jobads/#{jobad.id}"
           %tr
             %th
               .jobad__introduction__section 求人情報
