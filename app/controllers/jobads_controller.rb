@@ -1,4 +1,5 @@
 class JobadsController < ApplicationController
+
   def index
     @jobads = JobAd.all
   end
@@ -18,9 +19,12 @@ class JobadsController < ApplicationController
   end
 
   def edit
+    @jobad = JobAd.find(params[:id])
   end
 
   def update
+    jobad = JobAd.find(params[:id])
+    jobad.update(jobad_params)
   end
 
   def destroy
