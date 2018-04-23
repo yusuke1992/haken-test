@@ -17,3 +17,5 @@
     = link_to "homeへ戻る", "/jobads"
   .link__to__delete
     = link_to "求人削除", "/jobads/#{@jobad.id}", method: :delete
+  .link__to__edit
+    = link_to "編集", "/jobads/#{@jobad.id}/edit", method: :get
