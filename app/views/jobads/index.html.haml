@@ -10,7 +10,8 @@
               .jobad__name__section 求人
             %td
               .jobad__name
-                = link_to "#{jobad.name}", "/jobads/#{jobad.id}"
+                = jobad.name
+                = link_to "詳細", "/jobads/#{jobad.id}"
           %tr
             %th
               .jobad__introduction__section 求人情報

@@ -24,6 +24,8 @@ class JobadsController < ApplicationController
   end
 
   def destroy
+    jobad = JobAd.find(params[:id])
+    jobad.destroy
   end
 
 
