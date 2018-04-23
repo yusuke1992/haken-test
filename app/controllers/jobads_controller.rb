@@ -1,7 +1,10 @@
 class JobadsController < ApplicationController
 
+  before_action :move_to_index, except: :index
+
   def index
     @jobads = JobAd.all
+    @user = current_user
   end
 
   def new
@@ -38,4 +41,9 @@ private
   def jobad_params
     params.require(:job_ad).permit(:name, :introduction)
   end
+
+  def move_to_index
+    redirect_to action: :index unless user_signed_in?
+  end
+
 end
