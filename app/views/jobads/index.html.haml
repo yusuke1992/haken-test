@@ -1,6 +1,6 @@
 .container
   .profile
-    -# = "あなたのid:#{@user.id}"
+    = link_to "Sign out", destroy_user_session_path, method: :delete
   .link
     = link_to '求人作成', "/jobads/new"
   .jobad
@@ -13,7 +13,9 @@
             %td
               .jobad__name
                 = jobad.name
-                = link_to "詳細", "/jobads/#{jobad.id}"
+              = if admin_signed_in?
+                .jobad__detail
+                  = link_to "詳細", "/jobads/#{jobad.id}"
           %tr
             %th
               .jobad__introduction__section 求人情報
