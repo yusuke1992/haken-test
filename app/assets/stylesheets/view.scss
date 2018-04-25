@@ -1,0 +1,196 @@
+.SP__display{
+   width:375px;
+   height: 100%;
+   position:relative;
+   left:400px;
+   background-color:#E3E3E3;
+}
+
+.ad{
+  width:94%;
+  height:507px; //667pxの90%
+  margin:auto;
+  background-color:#FFF4E0;
+  position: relative;
+  top:5px;
+  border-radius: 2px;
+  // border: 0.5px solid gray;
+  box-shadow: 2px 2px #c9c9c9;
+  margin-bottom: 10px;
+
+.ad__header{
+  height:7px;
+  width:100%;
+  background-color:#FFAA7E;
+}
+
+.ad__block1{
+  height:80px;
+   background-color:#FFF4E0;
+   .ad__period__section{
+    font-size: 8px;
+    float: left;
+    position: relative;
+    left:230px;
+    top:10px;
+   }
+   .ad__period{
+    font-size: 8px;
+    color:#FF6B59;
+    float: left;
+    position: relative;
+    left:240px;
+    top:10px;
+   }
+   .ad__title1{
+    font-size: 18px;
+    color:#3AABD2;
+    font-weight:800;
+    position: relative;
+    top: 10px;
+    right:100px;
+   }
+   .ad__title2{
+    font-size: 18px;
+    color:#3AABD2;
+    font-weight:800;
+    position: relative;
+    top: 15px;
+    left:10px;
+   }
+}
+
+.ad__block2{
+  height:120px;
+  background-color:#FFE8BF;
+  .job__introduction__section{
+    font-size: 14px;
+    position: relative;
+    left:10px;
+    top:5px;
+    color:#FF6B59;
+  }
+
+  .job__introduction{
+    font-size: 13px;
+    width: 99%;
+    height:75%;
+    background-color: white;
+    margin: auto;
+    position: relative;
+    top:5px;
+    color: #6F6E6E;
+  }
+
+  .introduction__text{
+    font-size: 13px;
+    padding:5px;
+  }
+}
+
+.ad__block3{
+  height:244px;
+  background-color:#FFE8BF;
+
+
+
+  .ad__table{
+    height:244px;
+  background-color:white;
+  width: 99%;
+  margin: auto;
+  }
+  table{
+    width:94%;
+    position: relative;
+    left:10px;
+
+    tr{
+      border-bottom: dashed 1px #555555;
+    }
+
+    tr:last-child{
+  border-bottom: 0px;
+}
+
+    th{
+      width:20%;
+      vertical-align: top;
+    }
+    td{
+      width:80%;
+      vertical-align: top;
+     }
+
+     .dashed_line{
+       border-bottom: dashed 1px #6F6E6E;
+     }
+  }
+
+  .job__info__section{
+    font-weight:800;
+    font-size: 12px;
+    color:#81CD47;
+    padding:3.5px;
+
+  }
+
+  .job__info{
+    // font-weight:800;
+    font-size: 12px;
+    color:#6F6E6E;
+    padding:3.5px;
+  }
+}
+
+.ad__footer{
+  height:60px;
+  background-color:#FFF4E0;
+
+
+.button__a{
+  position: absolute;
+  left:2%;
+  bottom:7px;
+  padding:10px 20px;
+  text-align: center;
+  font-size: 14px;
+  // width:33%;
+  float:left;
+  background-color:#FF6B59;
+  color:white;
+  border-radius: 23px;
+  box-shadow: 2px 2px #c9c9c9;
+}
+
+
+.button__b{
+  position: absolute;
+  left:33%;
+  bottom:7px;
+  padding:10px 20px;
+  text-align:center;
+  font-size: 14px;
+float:left;
+background-color:#6DBCE4;
+color:white;
+border-radius: 23px;
+box-shadow: 2px 2px #c9c9c9;
+
+}
+.button__c{
+  position: absolute;
+  left:66%;
+  bottom:7px;
+  padding:10px 20px;
+  text-align: center;
+  font-size: 14px;
+float:left;
+background-color:#81CD47;
+color:white;
+border-radius: 23px;
+box-shadow: 2px 2px #c9c9c9;
+}
+}
+
+}
