@@ -3,6 +3,7 @@
     = link_to "Sign out", destroy_user_session_path, method: :delete
   .link
     = link_to '求人作成', "/jobads/new"
+    = link_to 'テストへ', "/tests"
   .jobad
     - @jobads.each do |jobad|
       %table
@@ -13,7 +14,7 @@
             %td
               .jobad__name
                 = jobad.name
-              = if admin_signed_in?
+              - if admin_signed_in?
                 .jobad__detail
                   = link_to "詳細", "/jobads/#{jobad.id}"
           %tr
