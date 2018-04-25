@@ -1,6 +1,6 @@
 class JobadsController < ApplicationController
 
-  before_action :move_to_index, except: :index
+  # before_action :move_to_index, except: :index
 
   def index
     @jobads = JobAd.all
@@ -33,6 +33,9 @@ class JobadsController < ApplicationController
   def destroy
     jobad = JobAd.find(params[:id])
     jobad.destroy
+  end
+
+  def test
   end
 
 
