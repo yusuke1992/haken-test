@@ -1,0 +1,2046 @@
+Last login: Thu May 10 13:25:36 on ttys000
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 47, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (47/47), 6.07 KiB | 1.21 MiB/s, done.
+Total 47 (delta 29), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using tzinfo 1.2.5
+remote:        Using nokogiri 1.8.2
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using mail 2.7.0
+remote:        Using websocket-driver 0.6.5
+remote:        Using uglifier 4.1.10
+remote:        Using coffee-script 2.4.1
+remote:        Using rb-inotify 0.9.10
+remote:        Using pry 0.11.3
+remote:        Using haml 5.0.4
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using turbolinks 5.1.1
+remote:        Using sass-listen 4.0.0
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using sass 3.5.6
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.31s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-10T07:02:05.936556 #396]  INFO -- : Writing /tmp/build_07146893daef320fa1729dd67076d5a8/public/assets/application-70600b635069ab3441e2fbd4a64afdc1090a9dedea5f381c7177580e06824b17.css
+remote:        I, [2018-05-10T07:02:05.937321 #396]  INFO -- : Writing /tmp/build_07146893daef320fa1729dd67076d5a8/public/assets/application-70600b635069ab3441e2fbd4a64afdc1090a9dedea5f381c7177580e06824b17.css.gz
+remote:        Asset precompilation completed (5.70s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-10T07:02:07.721534 #415]  INFO -- : Removed application-d8b7286fdd5e646aee52356b613fc6976e6b4517e00081e31dbd93d32b66d34a.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.1M
+remote: -----> Launching...
+remote:        Released v10
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   86e940f..22fd10a  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 25, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 2.90 KiB | 1.45 MiB/s, done.
+Total 25 (delta 20), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using tzinfo 1.2.5
+remote:        Using i18n 1.0.1
+remote:        Using nokogiri 1.8.2
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using mail 2.7.0
+remote:        Using websocket-driver 0.6.5
+remote:        Using uglifier 4.1.10
+remote:        Using coffee-script 2.4.1
+remote:        Using rb-inotify 0.9.10
+remote:        Using pry 0.11.3
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using sass 3.5.6
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.30s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-10T08:20:27.822397 #433]  INFO -- : Writing /tmp/build_9c2bac6a6f7434c31472509f77e2df7f/public/assets/application-494288af3e2f464d062ab142a2e59b62d725437ff3c00a47251a11c704e169e6.css
+remote:        I, [2018-05-10T08:20:27.823010 #433]  INFO -- : Writing /tmp/build_9c2bac6a6f7434c31472509f77e2df7f/public/assets/application-494288af3e2f464d062ab142a2e59b62d725437ff3c00a47251a11c704e169e6.css.gz
+remote:        Asset precompilation completed (2.18s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-10T08:20:29.668692 #440]  INFO -- : Removed application-34a194b7b7df79c1155e3e8c3c1618380cc357e189003e0bc6769f7dd85ab9a0.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.1M
+remote: -----> Launching...
+remote:        Released v11
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   22fd10a..43ad617  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ rails g controller homes
+Running via Spring preloader in process 7915
+      create  app/controllers/homes_controller.rb
+      invoke  erb
+      create    app/views/homes
+      invoke  test_unit
+      create    test/controllers/homes_controller_test.rb
+      invoke  helper
+      create    app/helpers/homes_helper.rb
+      invoke    test_unit
+      invoke  assets
+      invoke    coffee
+      create      app/assets/javascripts/homes.coffee
+      invoke    scss
+      create      app/assets/stylesheets/homes.scss
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 135, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (127/127), done.
+Writing objects: 100% (135/135), 14.20 KiB | 1.29 MiB/s, done.
+Total 135 (delta 78), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using nokogiri 1.8.2
+remote:        Using tzinfo 1.2.5
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using mail 2.7.0
+remote:        Using websocket-driver 0.6.5
+remote:        Using uglifier 4.1.10
+remote:        Using pry 0.11.3
+remote:        Using rb-inotify 0.9.10
+remote:        Using coffee-script 2.4.1
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using sass-listen 4.0.0
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using sass 3.5.6
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.34s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-11T04:35:41.260377 #409]  INFO -- : Writing /tmp/build_8da78a504b3e9b8367581c45bd9e707f/public/assets/application-28da6ae93e2f5f52e888b6b1f3c41bba91691a793736d970855baf5075023042.js
+remote:        I, [2018-05-11T04:35:41.261509 #409]  INFO -- : Writing /tmp/build_8da78a504b3e9b8367581c45bd9e707f/public/assets/application-28da6ae93e2f5f52e888b6b1f3c41bba91691a793736d970855baf5075023042.js.gz
+remote:        I, [2018-05-11T04:35:41.717421 #409]  INFO -- : Writing /tmp/build_8da78a504b3e9b8367581c45bd9e707f/public/assets/application-6245c8ee32071d5aecbfae24e4e48479dee6f9cb9bc8e1344c5f4df4af195d20.css
+remote:        I, [2018-05-11T04:35:41.717715 #409]  INFO -- : Writing /tmp/build_8da78a504b3e9b8367581c45bd9e707f/public/assets/application-6245c8ee32071d5aecbfae24e4e48479dee6f9cb9bc8e1344c5f4df4af195d20.css.gz
+remote:        Asset precompilation completed (6.25s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-11T04:35:44.945417 #428]  INFO -- : Removed application-0b6906a9d13bc9c30cc3d51c6977f14148d775a44b7a5d4c702e633a2e79b79f.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.3M
+remote: -----> Launching...
+remote:        Released v12
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   43ad617..15b04cb  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+ Prefix Verb   URI Pattern             Controller#Action
+   root GET    /                       homes#index
+    ads GET    /ads(.:format)          ads#index
+        POST   /ads(.:format)          ads#create
+ new_ad GET    /ads/new(.:format)      ads#new
+edit_ad GET    /ads/:id/edit(.:format) ads#edit
+     ad GET    /ads/:id(.:format)      ads#show
+        PATCH  /ads/:id(.:format)      ads#update
+        PUT    /ads/:id(.:format)      ads#update
+        DELETE /ads/:id(.:format)      ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 46, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (44/44), done.
+Writing objects: 100% (46/46), 5.29 KiB | 2.65 MiB/s, done.
+Total 46 (delta 32), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using tzinfo 1.2.5
+remote:        Using nokogiri 1.8.2
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using mail 2.7.0
+remote:        Using pry 0.11.3
+remote:        Using coffee-script 2.4.1
+remote:        Using uglifier 4.1.10
+remote:        Using rb-inotify 0.9.10
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using sass 3.5.6
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.30s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-11T09:12:44.044091 #380]  INFO -- : Writing /tmp/build_6d72a58e73817078b104cd701d876e45/public/assets/application-5999e4a64f2fba6c902d5dfdd05407138f379e12011a4411770e186c9155edbf.css
+remote:        I, [2018-05-11T09:12:44.044789 #380]  INFO -- : Writing /tmp/build_6d72a58e73817078b104cd701d876e45/public/assets/application-5999e4a64f2fba6c902d5dfdd05407138f379e12011a4411770e186c9155edbf.css.gz
+remote:        Asset precompilation completed (6.12s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-11T09:12:45.918876 #399]  INFO -- : Removed application-70600b635069ab3441e2fbd4a64afdc1090a9dedea5f381c7177580e06824b17.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.4M
+remote: -----> Launching...
+remote:        Released v13
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   15b04cb..72a2e82  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 1.18 KiB | 1.18 MiB/s, done.
+Total 7 (delta 5), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using tzinfo 1.2.5
+remote:        Using nokogiri 1.8.2
+remote:        Using mail 2.7.0
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using uglifier 4.1.10
+remote:        Using coffee-script 2.4.1
+remote:        Using rb-inotify 0.9.10
+remote:        Using pry 0.11.3
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using sass 3.5.6
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.28s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-11T09:31:25.128766 #451]  INFO -- : Writing /tmp/build_406a85f8014d46553db4ad0fceef0546/public/assets/application-684e30483638ac702e23bf9266746b72c1f7aa0b799f6837e79d045c976c6182.css
+remote:        I, [2018-05-11T09:31:25.129625 #451]  INFO -- : Writing /tmp/build_406a85f8014d46553db4ad0fceef0546/public/assets/application-684e30483638ac702e23bf9266746b72c1f7aa0b799f6837e79d045c976c6182.css.gz
+remote:        Asset precompilation completed (2.25s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-11T09:31:27.063278 #458]  INFO -- : Removed application-494288af3e2f464d062ab142a2e59b62d725437ff3c00a47251a11c704e169e6.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.4M
+remote: -----> Launching...
+remote:        Released v14
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   72a2e82..8670d80  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 12, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (12/12), done.
+Writing objects: 100% (12/12), 1.07 KiB | 182.00 KiB/s, done.
+Total 12 (delta 10), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using tzinfo 1.2.5
+remote:        Using i18n 1.0.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using mail 2.7.0
+remote:        Using nokogiri 1.8.2
+remote:        Using coffee-script 2.4.1
+remote:        Using uglifier 4.1.10
+remote:        Using pry 0.11.3
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using rb-inotify 0.9.10
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using sass 3.5.6
+remote:        Using activejob 5.0.7
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.19s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        Asset precompilation completed (1.97s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.4M
+remote: -----> Launching...
+remote:        Released v15
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   8670d80..8c82d89  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 25, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (25/25), done.
+Writing objects: 100% (25/25), 3.75 KiB | 1.88 MiB/s, done.
+Total 25 (delta 19), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using tzinfo 1.2.5
+remote:        Using nokogiri 1.8.2
+remote:        Using rack-test 0.6.3
+remote:        Using sprockets 3.7.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using mail 2.7.0
+remote:        Using coffee-script 2.4.1
+remote:        Using uglifier 4.1.10
+remote:        Using rb-inotify 0.9.10
+remote:        Using pry 0.11.3
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using sass-listen 4.0.0
+remote:        Using loofah 2.2.2
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using sass 3.5.6
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using actionview 5.0.7
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 19 Gemfile dependencies, 66 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.18s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-11T10:26:36.133456 #396]  INFO -- : Writing /tmp/build_7efcf23e207bd39d74b01586a07770b2/public/assets/application-b90bcdbd7b041d6a4cd33ce7c7aa6f05ccb12c49ab330a249f6feb1dc3018599.css
+remote:        I, [2018-05-11T10:26:36.134311 #396]  INFO -- : Writing /tmp/build_7efcf23e207bd39d74b01586a07770b2/public/assets/application-b90bcdbd7b041d6a4cd33ce7c7aa6f05ccb12c49ab330a249f6feb1dc3018599.css.gz
+remote:        Asset precompilation completed (2.30s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-11T10:26:37.870703 #403]  INFO -- : Removed application-6245c8ee32071d5aecbfae24e4e48479dee6f9cb9bc8e1344c5f4df4af195d20.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.5M
+remote: -----> Launching...
+remote:        Released v16
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   8c82d89..a7de2b2  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ git branch
+* device-admin-user
+  home-html-1
+  home-html-2
+  master
+  modify-home-html
+  modify_css_of_header_,_ads_and_footer
+  modify_top__new__ads_css
+yusuke-mbp:dot-a-haken yusukeharada$ bundel install
+-bash: bundel: command not found
+yusuke-mbp:dot-a-haken yusukeharada$ bundle install
+Using rake 12.3.1
+Using concurrent-ruby 1.0.5
+Using i18n 1.0.1
+Using minitest 5.11.3
+Using thread_safe 0.3.6
+Using tzinfo 1.2.5
+Using activesupport 5.0.7
+Using builder 3.2.3
+Using erubis 2.7.0
+Using mini_portile2 2.3.0
+Using nokogiri 1.8.2
+Using rails-dom-testing 2.0.3
+Using crass 1.0.4
+Using loofah 2.2.2
+Using rails-html-sanitizer 1.0.4
+Using actionview 5.0.7
+Using rack 2.0.5
+Using rack-test 0.6.3
+Using actionpack 5.0.7
+Using nio4r 2.3.1
+Using websocket-extensions 0.1.3
+Using websocket-driver 0.6.5
+Using actioncable 5.0.7
+Using globalid 0.4.1
+Using activejob 5.0.7
+Using mini_mime 1.0.0
+Using mail 2.7.0
+Using actionmailer 5.0.7
+Using activemodel 5.0.7
+Using arel 7.1.4
+Using activerecord 5.0.7
+Using bcrypt 3.1.11
+Using bindex 0.5.0
+Using bundler 1.16.1
+Using byebug 10.0.2
+Using coderay 1.1.2
+Using coffee-script-source 1.12.2
+Using execjs 2.7.0
+Using coffee-script 2.4.1
+Using method_source 0.9.0
+Using thor 0.20.0
+Using railties 5.0.7
+Using coffee-rails 4.2.2
+Using orm_adapter 0.5.0
+Using responders 2.4.0
+Using warden 1.2.7
+Using devise 4.4.3
+Using ffi 1.9.23
+Using temple 0.8.0
+Using tilt 2.0.8
+Using haml 5.0.4
+Using multi_json 1.13.1
+Using jbuilder 2.7.0
+Using jquery-rails 4.3.3
+Using rb-fsevent 0.10.3
+Using rb-inotify 0.9.10
+Using listen 3.0.8
+Using mysql2 0.5.1
+Using pry 0.11.3
+Using pry-byebug 3.6.0
+Using yard 0.9.12
+Using pry-doc 0.13.4
+Using pry-rails 0.3.6
+Using puma 3.11.4
+Using sprockets 3.7.1
+Using sprockets-rails 3.2.1
+Using rails 5.0.7
+Using sass-listen 4.0.0
+Using sass 3.5.6
+Using sass-rails 5.0.7
+Using spring 2.0.2
+Using spring-watcher-listen 2.0.1
+Using turbolinks-source 5.1.0
+Using turbolinks 5.1.1
+Using uglifier 4.1.10
+Using web-console 3.6.2
+Bundle complete! 20 Gemfile dependencies, 76 gems now installed.
+Use `bundle info [gemname]` to see where a bundled gem is installed.
+yusuke-mbp:dot-a-haken yusukeharada$ rails g devise:install
+Running via Spring preloader in process 26072
+      create  config/initializers/devise.rb
+      create  config/locales/devise.en.yml
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  1. Ensure you have defined default url options in your environments files. Here
+     is an example of default_url_options appropriate for a development environment
+     in config/environments/development.rb:
+
+       config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
+
+     In production, :host should be set to the actual host of your application.
+
+  2. Ensure you have defined root_url to *something* in your config/routes.rb.
+     For example:
+
+       root to: "home#index"
+
+  3. Ensure you have flash messages in app/views/layouts/application.html.erb.
+     For example:
+
+       <p class="notice"><%= notice %></p>
+       <p class="alert"><%= alert %></p>
+
+  4. You can copy Devise views (for customization) to your app by running:
+
+       rails g devise:views
+
+===============================================================================
+yusuke-mbp:dot-a-haken yusukeharada$ rails g devise admin
+Running via Spring preloader in process 26144
+      invoke  active_record
+      create    db/migrate/20180514033003_devise_create_admins.rb
+      create    app/models/admin.rb
+      invoke    test_unit
+      create      test/models/admin_test.rb
+      create      test/fixtures/admins.yml
+      insert    app/models/admin.rb
+       route  devise_for :admins
+yusuke-mbp:dot-a-haken yusukeharada$ rails g devise:controllers admins
+Running via Spring preloader in process 26163
+      create  app/controllers/admins/confirmations_controller.rb
+      create  app/controllers/admins/passwords_controller.rb
+      create  app/controllers/admins/registrations_controller.rb
+      create  app/controllers/admins/sessions_controller.rb
+      create  app/controllers/admins/unlocks_controller.rb
+      create  app/controllers/admins/omniauth_callbacks_controller.rb
+===============================================================================
+
+Some setup you must do manually if you haven't yet:
+
+  Ensure you have overridden routes for generated controllers in your routes.rb.
+  For example:
+
+    Rails.application.routes.draw do
+      devise_for :users, controllers: {
+        sessions: 'users/sessions'
+      }
+    end
+
+===============================================================================
+yusuke-mbp:dot-a-haken yusukeharada$ rails g devise:views admins
+Running via Spring preloader in process 26180
+      invoke  Devise::Generators::SharedViewsGenerator
+      create    app/views/admins/shared
+      create    app/views/admins/shared/_links.html.erb
+      invoke  form_for
+      create    app/views/admins/confirmations
+      create    app/views/admins/confirmations/new.html.erb
+      create    app/views/admins/passwords
+      create    app/views/admins/passwords/edit.html.erb
+      create    app/views/admins/passwords/new.html.erb
+      create    app/views/admins/registrations
+      create    app/views/admins/registrations/edit.html.erb
+      create    app/views/admins/registrations/new.html.erb
+      create    app/views/admins/sessions
+      create    app/views/admins/sessions/new.html.erb
+      create    app/views/admins/unlocks
+      create    app/views/admins/unlocks/new.html.erb
+      invoke  erb
+      create    app/views/admins/mailer
+      create    app/views/admins/mailer/confirmation_instructions.html.erb
+      create    app/views/admins/mailer/email_changed.html.erb
+      create    app/views/admins/mailer/password_change.html.erb
+      create    app/views/admins/mailer/reset_password_instructions.html.erb
+      create    app/views/admins/mailer/unlock_instructions.html.erb
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       kanri/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       kanri/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      kanri/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  kanri/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) kanri/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      kanri/passwords#update
+                          PUT    /admins/password(.:format)      kanri/passwords#update
+                          POST   /admins/password(.:format)      kanri/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        kanri/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       kanri/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          kanri/registrations#edit
+       admin_registration PATCH  /admins(.:format)               kanri/registrations#update
+                          PUT    /admins(.:format)               kanri/registrations#update
+                          DELETE /admins(.:format)               kanri/registrations#destroy
+                          POST   /admins(.:format)               kanri/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       devise/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       devise/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      devise/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  devise/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) devise/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      devise/passwords#update
+                          PUT    /admins/password(.:format)      devise/passwords#update
+                          POST   /admins/password(.:format)      devise/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        devise/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       devise/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          devise/registrations#edit
+       admin_registration PATCH  /admins(.:format)               devise/registrations#update
+                          PUT    /admins(.:format)               devise/registrations#update
+                          DELETE /admins(.:format)               devise/registrations#destroy
+                          POST   /admins(.:format)               devise/registrations#create
+                    login GET    /login(.:format)                devise/sessions#new
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       devise/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       devise/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      devise/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  devise/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) devise/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      devise/passwords#update
+                          PUT    /admins/password(.:format)      devise/passwords#update
+                          POST   /admins/password(.:format)      devise/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        devise/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       devise/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          devise/registrations#edit
+       admin_registration PATCH  /admins(.:format)               devise/registrations#update
+                          PUT    /admins(.:format)               devise/registrations#update
+                          DELETE /admins(.:format)               devise/registrations#destroy
+                          POST   /admins(.:format)               devise/registrations#create
+                    login GET    /login(.:format)                kanri/sessions#new
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       kanri/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       kanri/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      kanri/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  kanri/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) kanri/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      kanri/passwords#update
+                          PUT    /admins/password(.:format)      kanri/passwords#update
+                          POST   /admins/password(.:format)      kanri/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        kanri/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       kanri/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          kanri/registrations#edit
+       admin_registration PATCH  /admins(.:format)               kanri/registrations#update
+                          PUT    /admins(.:format)               kanri/registrations#update
+                          DELETE /admins(.:format)               kanri/registrations#destroy
+                          POST   /admins(.:format)               kanri/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ bundle exec rake db:migrate
+rake aborted!
+SyntaxError: /Users/yusukeharada/projects/dot-a-haken/db/migrate/20180514033003_devise_create_admins.rb:8: syntax error, unexpected tSYMBEG, expecting keyword_end
+      t.string :email,              null: false, default: ""
+                ^
+/Users/yusukeharada/projects/dot-a-haken/db/migrate/20180514033003_devise_create_admins.rb:8: Can't assign to false
+      t.string :email,              null: false, default: ""
+                                                ^
+/Users/yusukeharada/.rbenv/versions/2.3.1/bin/bundle:23:in `load'
+/Users/yusukeharada/.rbenv/versions/2.3.1/bin/bundle:23:in `<main>'
+Tasks: TOP => db:migrate
+(See full trace by running task with --trace)
+yusuke-mbp:dot-a-haken yusukeharada$ bundle exec rake db:migrate
+== 20180514033003 DeviseCreateAdmins: migrating ===============================
+-- create_table(:admins)
+   -> 0.1036s
+-- add_index(:admins, :email, {:unique=>true})
+   -> 0.0302s
+-- add_index(:admins, :reset_password_token, {:unique=>true})
+   -> 0.0123s
+== 20180514033003 DeviseCreateAdmins: migrated (0.1466s) ======================
+
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 57, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (53/53), done.
+Writing objects: 100% (57/57), 15.60 KiB | 1.95 MiB/s, done.
+Total 57 (delta 22), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Fetching bcrypt 3.1.11
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Fetching orm_adapter 0.5.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using tzinfo 1.2.5
+remote:        Using nokogiri 1.8.2
+remote:        Installing bcrypt 3.1.11 with native extensions
+remote:        Using rack-test 0.6.3
+remote:        Fetching warden 1.2.7
+remote:        Installing orm_adapter 0.5.0
+remote:        Installing warden 1.2.7
+remote:        Using sprockets 3.7.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using mail 2.7.0
+remote:        Using coffee-script 2.4.1
+remote:        Using uglifier 4.1.10
+remote:        Using pry 0.11.3
+remote:        Using rb-inotify 0.9.10
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using sass-listen 4.0.0
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using sass 3.5.6
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Fetching responders 2.4.0
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Installing responders 2.4.0
+remote:        Fetching devise 4.4.3
+remote:        Installing devise 4.4.3
+remote:        Bundle complete! 20 Gemfile dependencies, 71 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (4.59s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        Asset precompilation completed (2.26s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.9M
+remote: -----> Launching...
+remote:        Released v17
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   a7de2b2..cf98cbc  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       kanri/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       kanri/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      kanri/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  kanri/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) kanri/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      kanri/passwords#update
+                          PUT    /admins/password(.:format)      kanri/passwords#update
+                          POST   /admins/password(.:format)      kanri/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        kanri/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       kanri/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          kanri/registrations#edit
+       admin_registration PATCH  /admins(.:format)               kanri/registrations#update
+                          PUT    /admins(.:format)               kanri/registrations#update
+                          DELETE /admins(.:format)               kanri/registrations#destroy
+                          POST   /admins(.:format)               kanri/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 5, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 1.09 KiB | 1.09 MiB/s, done.
+Total 5 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bcrypt 3.1.11
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using i18n 1.0.1
+remote:        Using tzinfo 1.2.5
+remote:        Using nokogiri 1.8.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.7
+remote:        Using sprockets 3.7.1
+remote:        Using mail 2.7.0
+remote:        Using websocket-driver 0.6.5
+remote:        Using coffee-script 2.4.1
+remote:        Using uglifier 4.1.10
+remote:        Using rb-inotify 0.9.10
+remote:        Using haml 5.0.4
+remote:        Using pry 0.11.3
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using sass 3.5.6
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using activejob 5.0.7
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using responders 2.4.0
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Using devise 4.4.3
+remote:        Bundle complete! 20 Gemfile dependencies, 71 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.40s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        Asset precompilation completed (2.30s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.9M
+remote: -----> Launching...
+remote:        Released v18
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   cf98cbc..a4b17e5  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ heroku run rake db:migrate
+Running rake db:migrate on ⬢ dot-a-haken... up, run.9857 (Free)
+D, [2018-05-14T04:28:19.876842 #4] DEBUG -- :    (2.9ms)  SELECT DATABASE() as db
+D, [2018-05-14T04:28:19.880343 #4] DEBUG -- :    (3.0ms)  SELECT GET_LOCK('6338084773908121710', 0);
+D, [2018-05-14T04:28:19.910486 #4] DEBUG -- :   ActiveRecord::SchemaMigration Load (8.3ms)  SELECT `schema_migrations`.* FROM `schema_migrations`
+I, [2018-05-14T04:28:19.933393 #4]  INFO -- : Migrating to DeviseCreateAdmins (20180514033003)
+== 20180514033003 DeviseCreateAdmins: migrating ===============================
+-- create_table(:admins)
+D, [2018-05-14T04:28:19.950446 #4] DEBUG -- :    (9.6ms)  CREATE TABLE `admins` (`id` int AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `email` varchar(255) DEFAULT '' NOT NULL, `encrypted_password` varchar(255) DEFAULT '' NOT NULL, `reset_password_token` varchar(255), `reset_password_sent_at` datetime, `remember_created_at` datetime, `sign_in_count` int DEFAULT 0 NOT NULL, `current_sign_in_at` datetime, `last_sign_in_at` datetime, `current_sign_in_ip` varchar(255), `last_sign_in_ip` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL) ENGINE=InnoDB
+   -> 0.0129s
+-- add_index(:admins, :email, {:unique=>true})
+D, [2018-05-14T04:28:19.969830 #4] DEBUG -- :    (9.9ms)  CREATE UNIQUE INDEX `index_admins_on_email`  ON `admins` (`email`) 
+   -> 0.0193s
+-- add_index(:admins, :reset_password_token, {:unique=>true})
+D, [2018-05-14T04:28:19.989650 #4] DEBUG -- :    (9.9ms)  CREATE UNIQUE INDEX `index_admins_on_reset_password_token`  ON `admins` (`reset_password_token`) 
+   -> 0.0196s
+== 20180514033003 DeviseCreateAdmins: migrated (0.0522s) ======================
+
+D, [2018-05-14T04:28:19.994094 #4] DEBUG -- :    (2.9ms)  BEGIN
+D, [2018-05-14T04:28:19.998177 #4] DEBUG -- :   SQL (2.9ms)  INSERT INTO `schema_migrations` (`version`) VALUES ('20180514033003')
+D, [2018-05-14T04:28:20.004274 #4] DEBUG -- :    (4.6ms)  COMMIT
+D, [2018-05-14T04:28:20.021860 #4] DEBUG -- :   ActiveRecord::InternalMetadata Load (4.6ms)  SELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1
+D, [2018-05-14T04:28:20.038258 #4] DEBUG -- :    (4.7ms)  BEGIN
+D, [2018-05-14T04:28:20.043706 #4] DEBUG -- :    (3.7ms)  COMMIT
+D, [2018-05-14T04:28:20.047244 #4] DEBUG -- :    (2.8ms)  SELECT RELEASE_LOCK('6338084773908121710')
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 6, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 1.25 KiB | 1.25 MiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bcrypt 3.1.11
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using tzinfo 1.2.5
+remote:        Using i18n 1.0.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.7
+remote:        Using sprockets 3.7.1
+remote:        Using mail 2.7.0
+remote:        Using nokogiri 1.8.2
+remote:        Using coffee-script 2.4.1
+remote:        Using uglifier 4.1.10
+remote:        Using pry 0.11.3
+remote:        Using rb-inotify 0.9.10
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using activerecord 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using activejob 5.0.7
+remote:        Using sass 3.5.6
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using responders 2.4.0
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using sass-rails 5.0.7
+remote:        Using devise 4.4.3
+remote:        Bundle complete! 20 Gemfile dependencies, 71 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.27s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        Asset precompilation completed (2.34s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 46.9M
+remote: -----> Launching...
+remote:        Released v19
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   a4b17e5..20c3fee  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config | grep CLEARDB_DATABASE_URL
+CLEARDB_DATABASE_URL:     mysql://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?reconnect=true
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config:set DATABASE_URL='mysql2://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?reconnect=true
+> 
+yusuke-mbp:dot-a-haken yusukeharada$ b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?
+-bash: b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?: No such file or directory
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config:set DATABASE_URL='mysql2://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?
+> 
+> 
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config:set DATABASE_URL='mysql2://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?reconnect=true
+> heroku config | grep CLEARDB_DATABASE_URL
+> 
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config | grep CLEARDB_DATABASE_URL
+CLEARDB_DATABASE_URL:     mysql://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?reconnect=true
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config:set DATABASE_URL='mysql2://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?reconnect=true
+> 
+yusuke-mbp:dot-a-haken yusukeharada$ heroku config:set DATABASE_URL='mysql2://b82a8448d9f9bb:6979f4d9@us-cdbr-iron-east-04.cleardb.net/heroku_767814914c3511c?reconnect=true
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                admin_ads GET    /admin_ads(.:format)            ads#admin_index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                admin_ads GET    /admin_ads(.:format)            ads#admin_index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                      ads GET    /ads(.:format)                  ads#admin_index
+                          GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                admin_ads GET    /admin_ads(.:format)            ads#admin_index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ rake routes
+                   Prefix Verb   URI Pattern                     Controller#Action
+        new_admin_session GET    /admins/sign_in(.:format)       admins/sessions#new
+            admin_session POST   /admins/sign_in(.:format)       admins/sessions#create
+    destroy_admin_session DELETE /admins/sign_out(.:format)      admins/sessions#destroy
+       new_admin_password GET    /admins/password/new(.:format)  admins/passwords#new
+      edit_admin_password GET    /admins/password/edit(.:format) admins/passwords#edit
+           admin_password PATCH  /admins/password(.:format)      admins/passwords#update
+                          PUT    /admins/password(.:format)      admins/passwords#update
+                          POST   /admins/password(.:format)      admins/passwords#create
+cancel_admin_registration GET    /admins/cancel(.:format)        admins/registrations#cancel
+   new_admin_registration GET    /admins/sign_up(.:format)       admins/registrations#new
+  edit_admin_registration GET    /admins/edit(.:format)          admins/registrations#edit
+       admin_registration PATCH  /admins(.:format)               admins/registrations#update
+                          PUT    /admins(.:format)               admins/registrations#update
+                          DELETE /admins(.:format)               admins/registrations#destroy
+                          POST   /admins(.:format)               admins/registrations#create
+                     root GET    /                               homes#index
+                admin_ads GET    /admin_ads(.:format)            ads#admin_index
+                      ads GET    /ads(.:format)                  ads#index
+                          POST   /ads(.:format)                  ads#create
+                   new_ad GET    /ads/new(.:format)              ads#new
+                  edit_ad GET    /ads/:id/edit(.:format)         ads#edit
+                       ad GET    /ads/:id(.:format)              ads#show
+                          PATCH  /ads/:id(.:format)              ads#update
+                          PUT    /ads/:id(.:format)              ads#update
+                          DELETE /ads/:id(.:format)              ads#destroy
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku maseter
+error: src refspec maseter does not match any.
+error: failed to push some refs to 'https://git.heroku.com/dot-a-haken.git'
+yusuke-mbp:dot-a-haken yusukeharada$ git push heroku master
+Counting objects: 92, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (92/92), done.
+Writing objects: 100% (92/92), 9.79 KiB | 835.00 KiB/s, done.
+Total 92 (delta 63), reused 0 (delta 0)
+remote: Compressing source files... done.
+remote: Building source:
+remote: 
+remote: -----> Ruby app detected
+remote: -----> Compiling Ruby/Rails
+remote: -----> Using Ruby version: ruby-2.3.7
+remote: -----> Installing dependencies using bundler 1.15.2
+remote:        Running: bundle install --without development:test --path vendor/bundle --binstubs vendor/bundle/bin -j4 --deployment
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        Fetching gem metadata from https://rubygems.org/.........
+remote:        Fetching version metadata from https://rubygems.org/..
+remote:        Fetching dependency metadata from https://rubygems.org/.
+remote:        Using rake 12.3.1
+remote:        Using concurrent-ruby 1.0.5
+remote:        Using minitest 5.11.3
+remote:        Using thread_safe 0.3.6
+remote:        Using builder 3.2.3
+remote:        Using erubis 2.7.0
+remote:        Using mini_portile2 2.3.0
+remote:        Using crass 1.0.4
+remote:        Using rack 2.0.5
+remote:        Using nio4r 2.3.1
+remote:        Using websocket-extensions 0.1.3
+remote:        Using mini_mime 1.0.0
+remote:        Using arel 7.1.4
+remote:        Using bcrypt 3.1.11
+remote:        Using bundler 1.15.2
+remote:        Using byebug 10.0.2
+remote:        Using coderay 1.1.2
+remote:        Using coffee-script-source 1.12.2
+remote:        Using execjs 2.7.0
+remote:        Using method_source 0.9.0
+remote:        Using thor 0.20.0
+remote:        Using orm_adapter 0.5.0
+remote:        Using ffi 1.9.23
+remote:        Using temple 0.8.0
+remote:        Using tilt 2.0.8
+remote:        Using multi_json 1.13.1
+remote:        Using mysql2 0.5.1
+remote:        Using yard 0.9.12
+remote:        Using puma 3.11.4
+remote:        Using rb-fsevent 0.10.3
+remote:        Using turbolinks-source 5.1.0
+remote:        Using tzinfo 1.2.5
+remote:        Using i18n 1.0.1
+remote:        Using nokogiri 1.8.2
+remote:        Using rack-test 0.6.3
+remote:        Using warden 1.2.7
+remote:        Using sprockets 3.7.1
+remote:        Using websocket-driver 0.6.5
+remote:        Using mail 2.7.0
+remote:        Using uglifier 4.1.10
+remote:        Using coffee-script 2.4.1
+remote:        Using pry 0.11.3
+remote:        Using rb-inotify 0.9.10
+remote:        Using haml 5.0.4
+remote:        Using turbolinks 5.1.1
+remote:        Using activesupport 5.0.7
+remote:        Using loofah 2.2.2
+remote:        Using sass-listen 4.0.0
+remote:        Using pry-byebug 3.6.0
+remote:        Using pry-doc 0.13.4
+remote:        Using pry-rails 0.3.6
+remote:        Using rails-dom-testing 2.0.3
+remote:        Using globalid 0.4.1
+remote:        Using activemodel 5.0.7
+remote:        Using jbuilder 2.7.0
+remote:        Using rails-html-sanitizer 1.0.4
+remote:        Using sass 3.5.6
+remote:        Using activerecord 5.0.7
+remote:        Using activejob 5.0.7
+remote:        Using actionview 5.0.7
+remote:        Using actionpack 5.0.7
+remote:        Using actioncable 5.0.7
+remote:        Using actionmailer 5.0.7
+remote:        Using railties 5.0.7
+remote:        Using sprockets-rails 3.2.1
+remote:        Using coffee-rails 4.2.2
+remote:        Using responders 2.4.0
+remote:        Using jquery-rails 4.3.3
+remote:        Using rails 5.0.7
+remote:        Using devise 4.4.3
+remote:        Using sass-rails 5.0.7
+remote:        Bundle complete! 20 Gemfile dependencies, 71 gems now installed.
+remote:        Gems in the groups development and test were not installed.
+remote:        Bundled gems are installed into ./vendor/bundle.
+remote:        Bundle completed (3.35s)
+remote:        Cleaning up the bundler cache.
+remote:        Warning: the running version of Bundler (1.15.2) is older than the version that created the lockfile (1.16.1). We suggest you upgrade to the latest version of Bundler by running `gem install bundler`.
+remote:        The latest bundler is 1.16.1, but you are currently running 1.15.2.
+remote:        To update, run `gem install bundler`
+remote: -----> Installing node-v8.10.0-linux-x64
+remote: -----> Detecting rake tasks
+remote: -----> Preparing app for Rails asset pipeline
+remote:        Running: rake assets:precompile
+remote:        I, [2018-05-15T10:24:20.195176 #380]  INFO -- : Writing /tmp/build_05c687175b3b6887d5939b0c5fb9a780/public/assets/application-9159cb79e722dfa98f9f58236c06e729468def8f44c84b7fbd2713dc77f5c130.css
+remote:        I, [2018-05-15T10:24:20.196081 #380]  INFO -- : Writing /tmp/build_05c687175b3b6887d5939b0c5fb9a780/public/assets/application-9159cb79e722dfa98f9f58236c06e729468def8f44c84b7fbd2713dc77f5c130.css.gz
+remote:        Asset precompilation completed (6.54s)
+remote:        Cleaning assets
+remote:        Running: rake assets:clean
+remote:        I, [2018-05-15T10:24:22.277662 #399]  INFO -- : Removed application-5999e4a64f2fba6c902d5dfdd05407138f379e12011a4411770e186c9155edbf.css
+remote: 
+remote: ###### WARNING:
+remote:        You have not declared a Ruby version in your Gemfile.
+remote:        To set your Ruby version add this line to your Gemfile:
+remote:        ruby '2.3.7'
+remote:        # See https://devcenter.heroku.com/articles/ruby-versions for more information.
+remote: 
+remote: ###### WARNING:
+remote:        No Procfile detected, using the default web server.
+remote:        We recommend explicitly declaring how to boot your server process via a Procfile.
+remote:        https://devcenter.heroku.com/articles/ruby-default-web-server
+remote: 
+remote: -----> Discovering process types
+remote:        Procfile declares types     -> (none)
+remote:        Default types for buildpack -> console, rake, web, worker
+remote: 
+remote: -----> Compressing...
+remote:        Done: 47M
+remote: -----> Launching...
+remote:        Released v20
+remote:        https://dot-a-haken.herokuapp.com/ deployed to Heroku
+remote: 
+remote: Verifying deploy... done.
+To https://git.heroku.com/dot-a-haken.git
+   20c3fee..a4d19aa  master -> master
+yusuke-mbp:dot-a-haken yusukeharada$ 
+  [復元日時2018/05/16 15:13:13]
+Last login: Wed May 16 15:13:13 on ttys000
+yusuke-mbp:dot-a-haken yusukeharada$ 
+  [復元日時2018/05/16 15:25:54]
+Last login: Wed May 16 15:25:53 on ttys000
+yusuke-mbp:dot-a-haken yusukeharada$ 
+  [復元日時2018/05/16 15:27:34]
+Last login: Wed May 16 15:27:34 on ttys000
+yusuke-mbp:dot-a-haken yusukeharada$ 
+  [復元日時2018/05/16 15:28:54]
+Last login: Wed May 16 15:28:53 on ttys000
+yusuke-mbp:dot-a-haken yusukeharada$ rails g migration AddDetailsToAds work_place:text
+Running via Spring preloader in process 2147
+      invoke  active_record
+      create    db/migrate/20180516080418_add_details_to_ads.rb
+yusuke-mbp:dot-a-haken yusukeharada$ bundle exec rake db:migrate
